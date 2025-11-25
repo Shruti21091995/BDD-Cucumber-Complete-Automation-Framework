@@ -8,8 +8,8 @@ Feature: User Registration
   Scenario: Successful registration with valid details
     Given the user is on the registration page
     When the user provides valid details:
-      | FirstName | LastName | Email               | Password    | ConfirmPassword |
-      | smita     | patil      | smita.patil@gmail.com | Abc@12345   | Abc@12345        |
+      | FirstName | LastName | Email                     | Password    | ConfirmPassword |
+      | smita     | patil      | smita.patil.new@gmail.com | Abc@12345   | Abc@12345        |
     And clicks on the "Register" button
     Then registration should be successful
     

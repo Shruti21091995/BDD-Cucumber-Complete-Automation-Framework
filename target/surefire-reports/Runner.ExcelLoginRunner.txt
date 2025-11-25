@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: Runner.ExcelLoginRunner
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.85 s -- in Runner.ExcelLoginRunner

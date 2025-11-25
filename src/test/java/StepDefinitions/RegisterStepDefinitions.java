@@ -22,6 +22,33 @@ public class RegisterStepDefinitions
  WebDriver driver;
  ConfigReaderUtils config;
  RegisterPage register;
+ 
+ /**
+  * Generates a unique email by adding current time to it
+  * 
+  * HOW IT WORKS:
+  * Input:  smita.patil@gmail.com
+  * Output: smita.patil_1732531200@gmail.com
+  * 
+  * Every time you run the test, the number changes, so email is always unique!
+  */
+ private String generateDynamicEmail(String originalEmail) {
+     
+     // Step 1: Get current time in milliseconds (this number is always different)
+     long currentTime = System.currentTimeMillis();
+     
+     // Step 2: Split email into two parts: before @ and after @
+     // Example: "smita.patil@gmail.com" becomes ["smita.patil", "gmail.com"]
+     String beforeAt = originalEmail.split("@")[0];  // smita.patil
+     String afterAt = originalEmail.split("@")[1];   // gmail.com
+     
+     // Step 3: Create new email by adding time between name and @
+     // Result: smita.patil_1732531200@gmail.com
+     String uniqueEmail = beforeAt + "_" + currentTime + "@" + afterAt;
+     
+     // Step 4: Return the unique email
+     return uniqueEmail;
+ }
  @Given("the user is on the registration page")
  public void the_user_is_on_the_registration_page() throws IOException 
  {
@@ -46,8 +73,13 @@ public class RegisterStepDefinitions
 	    String email = data.get(0).get("Email");
 	    String password = data.get(0).get("Password");
 	    String confirmPassword = data.get(0).get("ConfirmPassword");
+	    
+	    // Generate dynamic email to avoid duplicate registration
+	    String dynamicEmail = generateDynamicEmail(email);
+	    logger.info("Using dynamic email for registration: {}", dynamicEmail);
+	    
 	    // Example: fill your registration page fields
-	  register.RegistrationDetails(firstName, lastName, email, password, confirmPassword,"Female");
+	  register.RegistrationDetails(firstName, lastName, dynamicEmail, password, confirmPassword,"Female");
 	  
 	  
  }
