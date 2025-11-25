@@ -163,11 +163,18 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.1.2</version>
         <configuration>
-         <includes>
-            <include>**/RunCucumberTest.java</include>
-        </includes>
-                
+          <!-- Option 1: Use testng.xml -->
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
           
+          <!-- Option 2: Or run all Runner classes automatically -->
+          <!-- Uncomment below and comment above to run all runners -->
+          <!--
+          <includes>
+            <include>**/Runner/*Runner.java</include>
+          </includes>
+          -->
         </configuration>
       </plugin>
 

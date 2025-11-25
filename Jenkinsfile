@@ -17,7 +17,17 @@ pipeline {
 
         stage('Build & Test') {
             steps {
-                bat 'mvn clean test -Dsurefire.suiteXmlFiles=testng.xml'
+                // Option 1: Run with testng.xml (all runners)
+                bat 'mvn clean test'
+                
+                // Option 2: Run specific suite
+                // bat 'mvn clean test -DsuiteXmlFile=master_suite.xml'
+                
+                // Option 3: Run parallel suite
+                // bat 'mvn clean test -DsuiteXmlFile=parallel_suit.xml'
+                
+                // Option 4: Run cross-browser suite
+                // bat 'mvn clean test -DsuiteXmlFile=Cross_Browser.xml'
             }
         }
 
@@ -33,9 +43,19 @@ pipeline {
     }
 
     post {
-    always {
-        echo "Publishing JUnit results"
-        junit 'target/cucumber-reports/*.xml'
+        always {
+            echo "Publishing test results"
+            // Publish TestNG results
+            junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml'
+            
+            // Publish Cucumber reports
+            junit allowEmptyResults: true, testResults: '**/target/cucumber-reports/*.xml'
+        }
+        success {
+            echo "Build succeeded!"
+        }
+        failure {
+            echo "Build failed!"
+        }
     }
-}
 }

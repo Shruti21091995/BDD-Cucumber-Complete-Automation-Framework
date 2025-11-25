@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="BDD Cucumber Complete Test Suite" verbose="1">
+<suite name="Master Test Suite - All Runners" verbose="1">
   
-  <!-- All Test Runners -->
-  <test name="All Cucumber Tests">
+  <test name="Login Tests">
     <classes>
       <class name="Runner.TestRunner"/>
+      <class name="Runner.ExcelLoginRunner"/>
+    </classes>
+  </test>
+  
+  <test name="Registration Tests">
+    <classes>
       <class name="Runner.RegisterRunner"/>
+    </classes>
+  </test>
+  
+  <test name="Product Tests">
+    <classes>
       <class name="Runner.ProductPageRunner"/>
       <class name="Runner.SearchPageRunner"/>
-      <class name="Runner.ExcelLoginRunner"/>
+    </classes>
+  </test>
+  
+  <test name="Checkout Tests">
+    <classes>
       <class name="Runner.BillingRunner"/>
       <class name="Runner.OrderConfirmationRunner"/>
+    </classes>
+  </test>
+  
+  <test name="End to End Tests">
+    <classes>
       <class name="Runner.EndToEndRunner"/>
     </classes>
   </test>
