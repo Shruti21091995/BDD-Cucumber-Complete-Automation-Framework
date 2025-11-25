@@ -1,0 +1,16 @@
+Files updated with Log4j2:
+✅ Hooks.java
+✅ BillingStepDefinitions.java  
+✅ LoginStepDefinitionsExcelData.java
+✅ ExcelLoginRunner.java
+✅ MasterRunner.java
+✅ OrderConfirmationStepdefinitions.java
+✅ HomePageStepDefinitions.java
+
+Remaining files to update:
+- CheckOutStepDefinitions.java
+- LoginStepDefinitions.java
+- LoginLinkStepDefinitions.java
+- ProductPageStepDefinitions.java
+- RegisterStepDefinitions.java
+- SearchPageStepDefinitions.java

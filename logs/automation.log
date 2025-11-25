@@ -1,0 +1,16 @@
+2025-11-24 18:31:08 [main] INFO  Runner.ExcelLoginRunner - Excel data loaded successfully. Rows: 2
+2025-11-24 18:31:09 [main] INFO  StepDefinitions.Hooks - Initializing chrome browser from config file
+2025-11-24 18:31:10 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+2025-11-24 18:31:10 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\shrut\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+2025-11-24 18:31:11 [main] INFO  StepDefinitions.Hooks - Browser initialized successfully
+2025-11-24 18:31:21 [main] INFO  StepDefinitions.LoginStepDefinitionsExcelData - User login completed successfully
+2025-11-24 18:31:21 [main] INFO  StepDefinitions.Hooks - Scenario passed: Login using Excel data
+2025-11-24 18:31:21 [main] INFO  StepDefinitions.Hooks - Browser closed successfully
+2025-11-24 18:39:56 [main] INFO  Runner.ExcelLoginRunner - Excel data loaded successfully. Rows: 2
+2025-11-24 18:39:57 [main] INFO  StepDefinitions.Hooks - Initializing chrome browser from config file
+2025-11-24 18:39:57 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+2025-11-24 18:39:58 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\shrut\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+2025-11-24 18:39:59 [main] INFO  StepDefinitions.Hooks - Browser initialized successfully
+2025-11-24 18:40:09 [main] INFO  StepDefinitions.LoginStepDefinitionsExcelData - User login completed successfully
+2025-11-24 18:40:09 [main] INFO  StepDefinitions.Hooks - Scenario passed: Login using Excel data
+2025-11-24 18:40:09 [main] INFO  StepDefinitions.Hooks - Browser closed successfully

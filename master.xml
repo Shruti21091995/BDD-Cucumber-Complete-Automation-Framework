@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Master Suite" verbose="1">
+
+    <test name="Master Test">
+        <classes>
+            <class name="runners.MasterRunner"/>
+        </classes>
+    </test>
+
+</suite>

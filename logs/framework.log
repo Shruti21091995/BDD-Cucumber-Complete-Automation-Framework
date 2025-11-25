@@ -1,0 +1,2 @@
+2025-11-24 18:27:24 INFO  WebDriverManager:1220 - Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+2025-11-24 18:27:24 INFO  WebDriverManager:1282 - Exporting webdriver.chrome.driver as C:\Users\shrut\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
