@@ -11,7 +11,7 @@ pipeline {
         stage('Checkout from GitHub') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/Shruti21091995/EcommerceTDDCompleteAutomationFramework.git'
+                    url: 'https://github.com/Shruti21091995/BDD-Cucumber-Complete-Automation-Framework.git'
             }
         }
 
