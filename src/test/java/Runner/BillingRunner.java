@@ -11,7 +11,8 @@ import io.cucumber.testng.CucumberOptions;
             "html:target/cucumber-reports/billing-report.html",
             "json:target/cucumber-reports/billing-report.json",
             "junit:target/cucumber-reports/billing-report.xml",
-            "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
+            "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+            "junit:target/cucumber-reports/Cucumber.xml"
     },
     monochrome = true,
     dryRun = false

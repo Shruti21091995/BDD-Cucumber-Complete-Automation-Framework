@@ -33,13 +33,9 @@ pipeline {
     }
 
     post {
-        always {
-            echo "Publishing JUnit results"
-            junit 'target/surefire-reports/*.xml'
-
-            echo "Archiving screenshots (if any)"
-            archiveArtifacts artifacts: 'target/screenshots/**',
-                              allowEmptyArchive: true
-        }
+    always {
+        echo "Publishing JUnit results"
+        junit 'target/cucumber-reports/*.xml'
     }
+}
 }

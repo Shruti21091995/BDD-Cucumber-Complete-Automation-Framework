@@ -13,7 +13,8 @@ import org.testng.annotations.Parameters;
             "html:target/cucumber-reports/master-report.html",
             "json:target/cucumber-reports/master-report.json",
             "junit:target/cucumber-reports/master-report.xml",
-            "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
+            "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+            "junit:target/cucumber-reports/Cucumber.xml"
     },
     monochrome = true,
     dryRun = false

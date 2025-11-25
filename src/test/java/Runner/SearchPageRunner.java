@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 		features ="src/test/resources/Feature/SearchProduct.feature",
 		glue= {"StepDefinitions"},
 		plugin= {"pretty","html:target/cucumber_reports/cucmber.htnml","json:target/cucumber_reports/cucumber.json",
-				"junit:target/cucumber_reports/cucumber.xml","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
+				"junit:target/cucumber_reports/cucumber.xml","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm", "junit:target/cucumber-reports/Cucumber.xml"},
 		tags="@Regression",
 		monochrome=true,
 		dryRun=false

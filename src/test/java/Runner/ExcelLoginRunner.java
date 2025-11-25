@@ -11,7 +11,8 @@ import io.cucumber.testng.CucumberOptions;
                 "pretty",
                 "html:target/cucumber-reports/excel-login-report.html",
                 "json:target/cucumber-reports/excel-login-report.json",
-                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
+                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+                "junit:target/cucumber-reports/Cucumber.xml"
         },
         monochrome = true,
         dryRun = false
